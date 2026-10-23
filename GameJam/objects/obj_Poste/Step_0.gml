@@ -1,4 +1,3 @@
-
 aceso = false;
 
 if (tipo_poste == 0) {
@@ -11,7 +10,6 @@ if (tipo_poste == 0) {
 
     cor_luz = make_color_rgb(255, 215, 110);
 }
-
 else if (tipo_poste == 1) {
 
     with (obj_CaixaSolar) {
@@ -22,7 +20,6 @@ else if (tipo_poste == 1) {
 
     cor_luz = make_color_rgb(255, 236, 165);
 }
-
 else if (tipo_poste == 2) {
 
     with (obj_CaixaSensor) {

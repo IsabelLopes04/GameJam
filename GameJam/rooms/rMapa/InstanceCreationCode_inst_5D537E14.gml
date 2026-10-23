@@ -1,2 +1,2 @@
 
-tipo_poste = 0;
+tipo_poste = 1;
