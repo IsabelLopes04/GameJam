@@ -31,8 +31,14 @@ if (instance_exists(_p)) {
 }
 
 if (missao_concluida) {
+
+    if (tempo_final > 0) {
+        tempo_final--;
+    }
+
     exit;
 }
+
 
 if (!painel_aberto) {
 
@@ -144,10 +150,18 @@ else {
             aviso_central = "A FACULDADE PRECISA DE LUZ FORTE!";
 
         }
-        else {
+        
+		
+else {
 
-            missao_concluida = true;
-            painel_aberto = false;
-        }
+    missao_concluida = true;
+    painel_aberto = false;
+
+    ativar_iluminacao = true;
+
+    tempo_final = room_speed * 5;
+}
+
+
     }
 }
