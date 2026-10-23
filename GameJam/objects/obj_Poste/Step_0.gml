@@ -1,4 +1,3 @@
-
 aceso = false;
 
 if (instance_exists(obj_CentralInteligente)) {

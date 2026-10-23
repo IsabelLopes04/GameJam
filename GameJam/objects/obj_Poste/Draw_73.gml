@@ -1,4 +1,3 @@
-
 if (intensidade_luz > 0) {
 
     var _lx = x + (luz_offset_x * lado_luz);
@@ -37,11 +36,25 @@ if (intensidade_luz > 0) {
 
     draw_set_color(cor_luz);
 
+<<<<<<< HEAD
     draw_set_alpha(0.85 * _forca);
     draw_circle(_lx, _ly, 4, false);
 
     draw_set_alpha(0.3 * _forca);
     draw_circle(_lx, _ly, 8, false);
+=======
+    draw_set_alpha(0.020 * _forca);
+    draw_circle(_lx, _ly, _raio, false);
+
+    draw_set_alpha(0.040 * _forca);
+    draw_circle(_lx, _ly, _raio * 0.70, false);
+
+    draw_set_alpha(0.070 * _forca);
+    draw_circle(_lx, _ly, _raio * 0.45, false);
+
+    draw_set_alpha(0.55 * _forca);
+    draw_circle(_lx, _ly, 5, false);
+>>>>>>> origin/main
 
     draw_set_alpha(1);
     draw_set_color(c_white);
