@@ -1,12 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_Personagem",
+  "%Name":"obj_personagem",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_Personagem",
+  "name":"obj_personagem",
   "overriddenProperties":[],
   "parent":{
     "name":"Objetos",
@@ -31,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_Esquerda",
-    "path":"sprites/spr_Esquerda/spr_Esquerda.yy",
+    "name":"spr_Frente",
+    "path":"sprites/spr_Frente/spr_Frente.yy",
   },
   "spriteMaskId":null,
   "visible":true,
