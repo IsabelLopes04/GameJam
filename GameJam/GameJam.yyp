@@ -48,7 +48,6 @@
     {"id":{"name":"spr_Poste","path":"sprites/spr_Poste/spr_Poste.yy",},},
     {"id":{"name":"spr_Predio","path":"sprites/spr_Predio/spr_Predio.yy",},},
     {"id":{"name":"spr_Rua","path":"sprites/spr_Rua/spr_Rua.yy",},},
-    {"id":{"name":"Sprite12","path":"sprites/Sprite12/Sprite12.yy",},},
     {"id":{"name":"t_Calcada","path":"tilesets/t_Calcada/t_Calcada.yy",},},
     {"id":{"name":"t_Grama","path":"tilesets/t_Grama/t_Grama.yy",},},
   ],
