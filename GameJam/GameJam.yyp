@@ -36,6 +36,14 @@
     {"id":{"name":"obj_CasaSimples2","path":"objects/obj_CasaSimples2/obj_CasaSimples2.yy",},},
     {"id":{"name":"obj_CentralInteligente","path":"objects/obj_CentralInteligente/obj_CentralInteligente.yy",},},
     {"id":{"name":"obj_Colisao","path":"objects/obj_Colisao/obj_Colisao.yy",},},
+<<<<<<< HEAD
+    {"id":{"name":"obj_Menu","path":"objects/obj_Menu/obj_Menu.yy",},},
+    {"id":{"name":"obj_personagem","path":"objects/obj_personagem/obj_personagem.yy",},},
+    {"id":{"name":"obj_Poste","path":"objects/obj_Poste/obj_Poste.yy",},},
+    {"id":{"name":"obj_Predio","path":"objects/obj_Predio/obj_Predio.yy",},},
+    {"id":{"name":"rm_Introducao","path":"rooms/rm_Introducao/rm_Introducao.yy",},},
+    {"id":{"name":"rm_Menu","path":"rooms/rm_Menu/rm_Menu.yy",},},
+=======
     {"id":{"name":"obj_Faculdade","path":"objects/obj_Faculdade/obj_Faculdade.yy",},},
     {"id":{"name":"obj_Hospital","path":"objects/obj_Hospital/obj_Hospital.yy",},},
     {"id":{"name":"obj_Mercado","path":"objects/obj_Mercado/obj_Mercado.yy",},},
@@ -49,10 +57,12 @@
     {"id":{"name":"obj_Salao","path":"objects/obj_Salao/obj_Salao.yy",},},
     {"id":{"name":"obj_Shopping","path":"objects/obj_Shopping/obj_Shopping.yy",},},
     {"id":{"name":"obj_Sorveteria","path":"objects/obj_Sorveteria/obj_Sorveteria.yy",},},
+>>>>>>> origin/main
     {"id":{"name":"rMapa","path":"rooms/rMapa/rMapa.yy",},},
     {"id":{"name":"spr_Arvore","path":"sprites/spr_Arvore/spr_Arvore.yy",},},
     {"id":{"name":"spr_CaixaLuz","path":"sprites/spr_CaixaLuz/spr_CaixaLuz.yy",},},
     {"id":{"name":"spr_Calcada","path":"sprites/spr_Calcada/spr_Calcada.yy",},},
+    {"id":{"name":"spr_CapaMenu","path":"sprites/spr_CapaMenu/spr_CapaMenu.yy",},},
     {"id":{"name":"spr_casa","path":"sprites/spr_casa/spr_casa.yy",},},
     {"id":{"name":"spr_casaazul","path":"sprites/spr_casaazul/spr_casaazul.yy",},},
     {"id":{"name":"spr_CasaSimples","path":"sprites/spr_CasaSimples/spr_CasaSimples.yy",},},
@@ -87,7 +97,9 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"rm_Menu","path":"rooms/rm_Menu/rm_Menu.yy",},},
     {"roomId":{"name":"rMapa","path":"rooms/rMapa/rMapa.yy",},},
+    {"roomId":{"name":"rm_Introducao","path":"rooms/rm_Introducao/rm_Introducao.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

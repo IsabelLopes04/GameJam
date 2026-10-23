@@ -21,3 +21,8 @@ nomes_regioes = [
     "PRACA PUBLICA",
     "RUA TRANQUILA"
 ];
+
+
+tempo_final = 0;
+
+ativar_iluminacao = false;

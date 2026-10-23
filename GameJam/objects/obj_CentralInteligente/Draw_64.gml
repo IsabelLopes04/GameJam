@@ -170,36 +170,104 @@ if (painel_aberto) {
     );
 
 }
+
 else if (missao_concluida) {
 
-    draw_set_alpha(0.93);
-    draw_set_color(make_color_rgb(12, 31, 38));
-    draw_rectangle(0, 0, _w, _h, false);
-    draw_set_alpha(1);
+    if (tempo_final > 0) {
 
-    draw_set_color(c_lime);
-    draw_text(_cx, _cy - 70, "PIXELIGHT");
+        draw_set_color(make_color_rgb(15, 35, 45));
+        draw_set_alpha(0.85);
 
-    draw_set_color(c_white);
-    draw_text(_cx, _cy - 30, "MISSAO CONCLUIDA!");
+        draw_rectangle(
+            _cx - 225, 20,
+            _cx + 225, 90,
+            false
+        );
 
-    draw_text(
-        _cx, _cy + 10,
-        "VOCE ILUMINOU TODA A CIDADE!"
-    );
+        draw_set_alpha(1);
+        draw_set_color(make_color_rgb(100, 235, 180));
 
-    draw_text(
-        _cx, _cy + 40,
-        "E ECONOMIZOU ENERGIA!"
-    );
+        draw_text(
+            _cx, 43,
+            "SISTEMA INTELIGENTE ATIVADO!"
+        );
 
-    draw_set_color(make_color_rgb(90, 210, 240));
-    draw_text(
-        _cx, _cy + 85,
-        "A CIENCIA DELAS ILUMINA O FUTURO!"
-    );
+        draw_set_color(c_white);
 
+        draw_text(
+            _cx, 68,
+            "A CIDADE ESTA SENDO ILUMINADA..."
+        );
+
+    }
+    else {
+
+        draw_set_alpha(0.93);
+        draw_set_color(make_color_rgb(12, 31, 38));
+
+        draw_rectangle(
+            0, 0, _w, _h, false
+        );
+
+        draw_set_alpha(1);
+
+        draw_set_color(make_color_rgb(255, 215, 110));
+
+        draw_text(
+            _cx, _cy - 110,
+            "PIXELIGHT"
+        );
+
+        draw_set_color(c_lime);
+
+        draw_text(
+            _cx, _cy - 75,
+            "MISSAO CONCLUIDA!"
+        );
+
+        draw_set_color(c_white);
+
+        draw_text(
+            _cx, _cy - 35,
+            "PARABENS!"
+        );
+
+        draw_text(
+            _cx, _cy - 5,
+            "VOCE AJUDOU A ILUMINAR A CIDADE!"
+        );
+
+        draw_text(
+            _cx, _cy + 30,
+            "A ILUMINACAO PUBLICA CONTRIBUI"
+        );
+
+        draw_text(
+            _cx, _cy + 50,
+            "PARA CAMINHOS MAIS SEGUROS."
+        );
+
+        draw_set_color(make_color_rgb(100, 220, 170));
+
+        draw_text(
+            _cx, _cy + 82,
+            "COM TECNOLOGIA E ENERGIA"
+        );
+
+        draw_text(
+            _cx, _cy + 102,
+            "SUSTENTAVEL, EVITAMOS DESPERDICIOS!"
+        );
+
+        draw_set_color(make_color_rgb(90, 210, 240));
+
+        draw_text(
+            _cx, _cy + 140,
+            "A CIENCIA DELAS ILUMINA O FUTURO!"
+        );
+    }
 }
+
 else if (instance_exists(obj_personagem)) {
 
     var _p = instance_nearest(x, y, obj_personagem);
