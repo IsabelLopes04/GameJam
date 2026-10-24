@@ -26,3 +26,6 @@ nomes_regioes = [
 tempo_final = 0;
 
 ativar_iluminacao = false;
+
+balao_visivel = false;
+balao_tempo = 0;

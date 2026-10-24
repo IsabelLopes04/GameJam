@@ -158,10 +158,23 @@ else {
     painel_aberto = false;
 
     ativar_iluminacao = true;
+	audio_play_sound(snd_central_ativar, 3, false);
 
     tempo_final = room_speed * 5;
 }
 
 
     }
+}
+
+if (!missao_concluida && !painel_aberto) {
+
+    if (desbloqueada) {
+        balao_visivel = true;
+    } else {
+        balao_visivel = false;
+    }
+
+} else {
+    balao_visivel = false;
 }

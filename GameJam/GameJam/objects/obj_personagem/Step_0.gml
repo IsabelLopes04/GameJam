@@ -10,45 +10,78 @@ if (derrotado) {
     exit;
 }
 
-if (instance_exists(obj_CentralInteligente)) {
+
+if (tarefa_aberta && task_concluida) {
+
+    image_speed = 0;
 
     if (
-        obj_CentralInteligente.painel_aberto ||
-        obj_CentralInteligente.missao_concluida
+        keyboard_check_pressed(vk_space) ||
+        keyboard_check_pressed(vk_enter)
     ) {
+
+        tarefa_aberta = false;
+        task_concluida = false;
+        caixa_atual = noone;
+        progresso_task = 0;
+
+        fio_arrastando = -1;
+        fios_conectados = [false, false, false, false];
+
+        angulo_solar = 0;
+        modulo_solar = 0;
+        erro_solar = 0;
+
+        sensor_posicao = 0;
+        sensor_direcao = 1;
+        sensor_acertos = 0;
+        sensor_erro = 0;
+    }
+
+    exit;
+}
+
+
+if (instance_exists(obj_CentralInteligente)) {
+
+    var _central = instance_find(obj_CentralInteligente, 0);
+
+    if (
+        _central.painel_aberto ||
+        _central.missao_concluida
+    ) {
+
         image_speed = 0;
         exit;
     }
 }
 
+
 if (tarefa_aberta) {
 
     image_speed = 0;
-
-    if (task_concluida) {
-
-        tempo_conclusao--;
-
-        if (tempo_conclusao <= 0) {
-
-            tarefa_aberta = false;
-            task_concluida = false;
-            caixa_atual = noone;
-            progresso_task = 0;
-        }
-
-        exit;
-    }
 
     if (keyboard_check_pressed(ord("S"))) {
 
         tarefa_aberta = false;
         caixa_atual = noone;
         progresso_task = 0;
+
         fio_arrastando = -1;
+        fios_conectados = [false, false, false, false];
+
+        angulo_solar = 0;
+        modulo_solar = 0;
+        erro_solar = 0;
+
+        sensor_posicao = 0;
+        sensor_direcao = 1;
+        sensor_acertos = 0;
+        sensor_erro = 0;
 
         exit;
     }
+
 
     if (tipo_task == 0) {
 
@@ -71,9 +104,11 @@ if (tarefa_aberta) {
 
                     if (
                         point_distance(
-                            _mx, _my, _esq, _fy
+                            _mx, _my,
+                            _esq, _fy
                         ) < 18
                     ) {
+
                         fio_arrastando = i;
                         break;
                     }
@@ -91,7 +126,8 @@ if (tarefa_aberta) {
 
                     if (
                         point_distance(
-                            _mx, _my, _dir, _dest_y
+                            _mx, _my,
+                            _dir, _dest_y
                         ) < 20
                     ) {
 
@@ -100,14 +136,12 @@ if (tarefa_aberta) {
                             fio_arrastando
                         ) {
 
-                            fios_conectados[
-                                fio_arrastando
-                            ] = true;
-
+                            fios_conectados[fio_arrastando] = true;
                             progresso_task++;
+							audio_play_sound(snd_acerto, 1, false);
 
                         } else {
-
+							audio_play_sound(snd_erro, 1, false);
                             perder_vida();
                         }
 
@@ -123,7 +157,7 @@ if (tarefa_aberta) {
                 ) {
 
                     task_concluida = true;
-                    tempo_conclusao = room_speed * 2;
+					audio_play_sound(snd_task_concluida, 2, false);
 
                     if (instance_exists(caixa_atual)) {
                         caixa_atual.concluida = true;
@@ -132,6 +166,7 @@ if (tarefa_aberta) {
             }
         }
     }
+
 
     else if (tipo_task == 1) {
 
@@ -155,6 +190,8 @@ if (tarefa_aberta) {
 
                 modulo_solar++;
                 progresso_task = modulo_solar;
+				
+				audio_play_sound(snd_acerto, 1, false);
 
                 angulo_solar = 0;
                 erro_solar = 0;
@@ -162,7 +199,7 @@ if (tarefa_aberta) {
                 if (modulo_solar >= 3) {
 
                     task_concluida = true;
-                    tempo_conclusao = room_speed * 2;
+					audio_play_sound(snd_task_concluida, 2, false);
 
                     if (instance_exists(caixa_atual)) {
                         caixa_atual.concluida = true;
@@ -172,10 +209,12 @@ if (tarefa_aberta) {
             } else {
 
                 erro_solar = room_speed;
+				audio_play_sound(snd_erro, 1, false);
                 perder_vida();
             }
         }
     }
+
 
     else if (tipo_task == 2) {
 
@@ -189,11 +228,13 @@ if (tarefa_aberta) {
         sensor_posicao += _vel * sensor_direcao;
 
         if (sensor_posicao >= 1) {
+
             sensor_posicao = 1;
             sensor_direcao = -1;
         }
 
         if (sensor_posicao <= 0) {
+
             sensor_posicao = 0;
             sensor_direcao = 1;
         }
@@ -214,6 +255,8 @@ if (tarefa_aberta) {
 
                 sensor_acertos++;
                 progresso_task = sensor_acertos;
+				
+				audio_play_sound(snd_acerto, 1, false);
 
                 sensor_posicao = 0;
                 sensor_direcao = 1;
@@ -222,7 +265,7 @@ if (tarefa_aberta) {
                 if (sensor_acertos >= sensor_total) {
 
                     task_concluida = true;
-                    tempo_conclusao = room_speed * 2;
+					audio_play_sound(snd_task_concluida, 2, false);
 
                     if (instance_exists(caixa_atual)) {
                         caixa_atual.concluida = true;
@@ -232,6 +275,7 @@ if (tarefa_aberta) {
             } else {
 
                 sensor_erro = room_speed;
+				audio_play_sound(snd_erro, 1, false);
                 perder_vida();
             }
         }
@@ -239,6 +283,7 @@ if (tarefa_aberta) {
 
     exit;
 }
+
 
 var _hor = keyboard_check(ord("D"))
          - keyboard_check(ord("A"));
@@ -253,6 +298,7 @@ var _dist = max(
 
 var _mov_x = (_hor / _dist) * velocidade;
 var _mov_y = (_ver / _dist) * velocidade;
+
 
 if (place_meeting(x, y, obj_Colisao)) {
 
@@ -332,6 +378,7 @@ if (place_meeting(x, y, obj_Colisao)) {
     }
 }
 
+
 if (_hor > 0) {
     sprite_index = spr_Direita;
 }
@@ -346,11 +393,15 @@ else if (_ver > 0) {
 }
 
 if (_hor != 0 || _ver != 0) {
+
     image_speed = 0.2;
+
 } else {
+
     image_speed = 0;
     image_index = 0;
 }
+
 
 caixa_atual = noone;
 
@@ -372,13 +423,15 @@ var _sensor = instance_nearest(
 if (instance_exists(_luz)) {
 
     var _dl = point_distance(
-        x, y, _luz.x, _luz.y
+        x, y,
+        _luz.x, _luz.y
     );
 
     if (
         _dl < _menor_distancia &&
         !_luz.concluida
     ) {
+
         _caixa = _luz;
         _menor_distancia = _dl;
     }
@@ -387,13 +440,15 @@ if (instance_exists(_luz)) {
 if (instance_exists(_solar)) {
 
     var _ds = point_distance(
-        x, y, _solar.x, _solar.y
+        x, y,
+        _solar.x, _solar.y
     );
 
     if (
         _ds < _menor_distancia &&
         !_solar.concluida
     ) {
+
         _caixa = _solar;
         _menor_distancia = _ds;
     }
@@ -402,17 +457,20 @@ if (instance_exists(_solar)) {
 if (instance_exists(_sensor)) {
 
     var _dt = point_distance(
-        x, y, _sensor.x, _sensor.y
+        x, y,
+        _sensor.x, _sensor.y
     );
 
     if (
         _dt < _menor_distancia &&
         !_sensor.concluida
     ) {
+
         _caixa = _sensor;
         _menor_distancia = _dt;
     }
 }
+
 
 if (instance_exists(_caixa)) {
 
@@ -420,7 +478,9 @@ if (instance_exists(_caixa)) {
 
     if (keyboard_check_pressed(ord("E"))) {
 
-        tipo_task = 0;
+    audio_play_sound(snd_interagir, 1, false);
+
+    tipo_task = 0;
 
         if (
             _caixa.object_index == obj_CaixaSolar
