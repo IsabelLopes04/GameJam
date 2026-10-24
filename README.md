@@ -74,8 +74,8 @@ Após concluir as missões, o jogador poderá ativar o sistema inteligente e ilu
 
 - **GameMaker:** desenvolvimento do jogo.
 - **GML (GameMaker Language):** programação das mecânicas.
-- **Pixel art:** criação dos personagens, cenários e objetos.
 - **Git e GitHub:** versionamento e colaboração.
+- **ChatGPT (OpenAI) e Claude (Anthropic):** ferramentas de IA utilizadas como apoio na criação e no aprimoramento de sprites, desenvolvimento de códigos, correção de erros e implementação de funcionalidades.
 
 ## Como jogar
 
