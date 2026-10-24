@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_CaixaLuz",
-    "path":"sprites/spr_CaixaLuz/spr_CaixaLuz.yy",
+    "name":"spr_CentralInteligente",
+    "path":"sprites/spr_CentralInteligente/spr_CentralInteligente.yy",
   },
   "spriteMaskId":null,
   "visible":true,

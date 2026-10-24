@@ -63,6 +63,8 @@ sensor_tolerancias = [
 
 perder_vida = function() {
 
+	audio_play_sound(snd_perder_vida, 1, false);
+	
     if (derrotado) {
         return;
     }
@@ -77,3 +79,9 @@ perder_vida = function() {
         image_speed = 0;
     }
 };
+
+mensagens_educativas = [
+    "Uma boa manutenção evita falhas na iluminação e torna as ruas mais seguras.",
+    "Os paineis solares aproveitam a luz do Sol para produzir energia renovavel.",
+    "Sensores ajustam a iluminacao conforme o movimento, economizando energia."
+];
