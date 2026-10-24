@@ -1,0 +1,13 @@
+
+pagina_final = 0;
+texto_visivel = 0;
+velocidade_texto = 1.5;
+
+mensagens = [
+    "PARABENS! VOCE AJUDOU A ILUMINAR A CIDADE!",
+    "A ILUMINACAO PUBLICA CONTRIBUI PARA CAMINHOS MAIS SEGUROS.",
+    "COM TECNOLOGIA E ENERGIA SUSTENTAVEL, EVITAMOS DESPERDICIOS!",
+    "A CIENCIA DELAS ILUMINA O FUTURO!"
+];
+
+hover_finalizar = false;

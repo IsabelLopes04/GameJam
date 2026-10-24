@@ -55,12 +55,7 @@ if (painel_aberto) {
 
         draw_set_halign(fa_left);
         draw_set_color(c_white);
-
-        draw_text(
-            _cx - 260, _ry,
-            nomes_regioes[i]
-        );
-
+        draw_text(_cx - 260, _ry, nomes_regioes[i]);
         draw_set_halign(fa_center);
 
         for (var j = 0; j < 3; j++) {
@@ -99,7 +94,6 @@ if (painel_aberto) {
             );
 
             if (modos[i] == j) {
-
                 draw_set_color(c_white);
                 draw_rectangle(
                     _bx, _ry - 15,
@@ -108,11 +102,7 @@ if (painel_aberto) {
             }
 
             draw_set_color(c_white);
-            draw_text(
-                _bx + 52,
-                _ry,
-                _texto
-            );
+            draw_text(_bx + 52, _ry, _texto);
         }
     }
 
@@ -125,8 +115,7 @@ if (painel_aberto) {
 
     if (consumo_atual > limite_energia) {
         draw_set_color(c_red);
-    }
-    else {
+    } else {
         draw_set_color(c_lime);
     }
 
@@ -137,13 +126,9 @@ if (painel_aberto) {
     );
 
     if (aviso_central != "") {
-
         draw_set_color(make_color_rgb(255, 213, 106));
         draw_text(_cx, _cy + 112, aviso_central);
-
-    }
-    else {
-
+    } else {
         draw_set_color(c_white);
         draw_text(
             _cx, _cy + 112,
@@ -158,10 +143,7 @@ if (painel_aberto) {
     );
 
     draw_set_color(c_white);
-    draw_text(
-        _cx, _cy + 135,
-        "TESTAR MINHA CIDADE"
-    );
+    draw_text(_cx, _cy + 135, "TESTAR MINHA CIDADE");
 
     draw_set_color(make_color_rgb(185, 200, 215));
     draw_text(
@@ -170,7 +152,6 @@ if (painel_aberto) {
     );
 
 }
-
 else if (missao_concluida) {
 
     if (tempo_final > 0) {
@@ -180,8 +161,7 @@ else if (missao_concluida) {
 
         draw_rectangle(
             _cx - 225, 20,
-            _cx + 225, 90,
-            false
+            _cx + 225, 90, false
         );
 
         draw_set_alpha(1);
@@ -193,86 +173,17 @@ else if (missao_concluida) {
         );
 
         draw_set_color(c_white);
-
         draw_text(
             _cx, 68,
             "A CIDADE ESTA SENDO ILUMINADA..."
         );
-
-    }
-    else {
-
-        draw_set_alpha(0.93);
-        draw_set_color(make_color_rgb(12, 31, 38));
-
-        draw_rectangle(
-            0, 0, _w, _h, false
-        );
-
-        draw_set_alpha(1);
-
-        draw_set_color(make_color_rgb(255, 215, 110));
-
-        draw_text(
-            _cx, _cy - 110,
-            "PIXELIGHT"
-        );
-
-        draw_set_color(c_lime);
-
-        draw_text(
-            _cx, _cy - 75,
-            "MISSAO CONCLUIDA!"
-        );
-
-        draw_set_color(c_white);
-
-        draw_text(
-            _cx, _cy - 35,
-            "PARABENS!"
-        );
-
-        draw_text(
-            _cx, _cy - 5,
-            "VOCE AJUDOU A ILUMINAR A CIDADE!"
-        );
-
-        draw_text(
-            _cx, _cy + 30,
-            "A ILUMINACAO PUBLICA CONTRIBUI"
-        );
-
-        draw_text(
-            _cx, _cy + 50,
-            "PARA CAMINHOS MAIS SEGUROS."
-        );
-
-        draw_set_color(make_color_rgb(100, 220, 170));
-
-        draw_text(
-            _cx, _cy + 82,
-            "COM TECNOLOGIA E ENERGIA"
-        );
-
-        draw_text(
-            _cx, _cy + 102,
-            "SUSTENTAVEL, EVITAMOS DESPERDICIOS!"
-        );
-
-        draw_set_color(make_color_rgb(90, 210, 240));
-
-        draw_text(
-            _cx, _cy + 140,
-            "A CIENCIA DELAS ILUMINA O FUTURO!"
-        );
     }
 }
-
 else if (instance_exists(obj_personagem)) {
 
     var _p = instance_nearest(x, y, obj_personagem);
 
-    if (point_distance(x, y, _p.x, _p.y) < 120) {
+    if (point_distance(x, y, _p.x, _p.y) < 40) {
 
         if (!_p.tarefa_aberta) {
 
@@ -286,8 +197,7 @@ else if (instance_exists(obj_personagem)) {
 
             if (desbloqueada) {
                 draw_text(_cx, _h - 68, "E - ACESSAR CENTRAL");
-            }
-            else {
+            } else {
                 draw_text(_cx, _h - 68, "CONCLUA AS 3 TASKS!");
             }
         }

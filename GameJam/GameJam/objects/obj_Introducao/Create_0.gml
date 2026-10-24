@@ -1,10 +1,12 @@
 
 pagina = 0;
+texto_visivel = 0;
+velocidade_texto = 1;
 
 falas = [
-    "Oi! Meu nome e Ana, e sou estudante de tecnologia.",
-    "Hoje, ao sair da faculdade, percebi que varias ruas da cidade estavam escuras.",
-    "A falta de iluminacao prejudica a seguranca das pessoas e pode causar desperdicio de energia.",
-    "Mas tenho uma ideia! Podemos usar ciencia, energia solar e sensores inteligentes para mudar isso.",
-    "Preciso da sua ajuda para consertar os equipamentos e iluminar nossa cidade. Vamos juntos?"
+    "Oi! Eu sou a Ana, estudante de tecnologia.",
+    "Hoje, saindo da faculdade, percebi que muitas ruas estao escuras.",
+    "A falta de iluminacao pode deixar as pessoas inseguras durante a noite.",
+    "Mas podemos usar energia solar e sensores inteligentes para mudar isso!",
+    "Preciso da sua ajuda para recuperar os equipamentos e iluminar nossa cidade. Vamos?"
 ];

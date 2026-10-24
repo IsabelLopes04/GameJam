@@ -1,21 +1,39 @@
-tipo_poste = 0;
+ligado = true;
 
-aceso = false;
+if (variable_global_exists("cidade_iluminada")) {
+    ligado = global.cidade_iluminada;
+}
+
 intensidade_luz = 0;
+intensidade_alvo = 1;
+velocidade_luz = 0.04;
 
-raio_luz = 32;
+// cor da luz
+cor_luz = make_color_rgb(255, 220, 150);
+cor_lampada = make_color_rgb(255, 245, 190);
 
-raio_luz = 72;
+// posição do brilho da lâmpada
+lamp_x = 0;
+lamp_y = -42;
 
+// posição base da luz no chão
+chao_x = 0;
+chao_y = 34;
 
-lado_luz = 1;
-luz_offset_x = 14;
-luz_offset_y = -54;
+// alcance das luzes
+raio_centro = 120;
+raio_lateral = 85;
+raio_frente = 100;
 
+// espalhamento da luz em vários pontos
+ponto1_x = 0;
+ponto1_y = 34;
 
-cor_luz = make_color_rgb(255, 215, 150);
+ponto2_x = -32;
+ponto2_y = 42;
 
-atraso_luz = irandom_range(0, 60);
+ponto3_x = 32;
+ponto3_y = 42;
 
-cor_luz = make_color_rgb(255, 215, 110);
-
+ponto4_x = 0;
+ponto4_y = 68;

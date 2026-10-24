@@ -2,74 +2,43 @@
 var _w = display_get_gui_width();
 var _h = display_get_gui_height();
 
-draw_set_color(make_color_rgb(15, 25, 42));
-draw_rectangle(0, 0, _w, _h, false);
+draw_set_font(fnt_Dialogo);
+draw_set_halign(fa_left);
+draw_set_valign(fa_top);
 
-draw_set_color(make_color_rgb(35, 55, 75));
-draw_rectangle(0, _h * 0.58, _w, _h, false);
+var _escala = 1.5;
 
-draw_set_halign(fa_center);
-draw_set_valign(fa_middle);
+draw_set_color(make_color_rgb(255, 200, 70));
 
-draw_set_color(make_color_rgb(255, 215, 110));
 draw_text_transformed(
-    _w / 2,
-    _h * 0.15,
-    "PIXELIGHT",
-    2,
-    2,
+    _w * 0.29,
+    _h * 0.665,
+    "ANA",
+    1.2,
+    1.2,
     0
 );
 
 draw_set_color(c_white);
-draw_text(
-    _w / 2,
-    _h * 0.25,
-    "A CIENCIA DELAS ILUMINA O FUTURO"
-);
 
-draw_set_color(make_color_rgb(12, 20, 35));
-draw_rectangle(
-    _w * 0.08,
-    _h * 0.62,
-    _w * 0.92,
-    _h * 0.91,
-    false
-);
-
-draw_set_color(make_color_rgb(255, 215, 110));
-draw_rectangle(
-    _w * 0.08,
-    _h * 0.62,
-    _w * 0.92,
-    _h * 0.91,
-    true
-);
-
-draw_set_halign(fa_left);
-draw_set_valign(fa_top);
-
-draw_set_color(make_color_rgb(255, 215, 110));
-draw_text(_w * 0.12, _h * 0.66, "ANA");
-
-draw_set_color(c_white);
-draw_text_ext(
-    _w * 0.12,
-    _h * 0.72,
+var _texto = string_copy(
     falas[pagina],
-    6,
-    _w * 0.76
+    1,
+    floor(texto_visivel)
 );
 
-draw_set_halign(fa_center);
-
-draw_set_color(make_color_rgb(170, 190, 210));
-draw_text(
-    _w / 2,
-    _h * 0.95,
-    "ESPACO OU CLIQUE PARA CONTINUAR"
+draw_text_ext_transformed(
+    _w * 0.29,
+    _h * 0.72,
+    _texto,
+    36,
+    (_w * 0.49) / _escala,
+    _escala,
+    _escala,
+    0
 );
 
+draw_set_font(-1);
 draw_set_color(c_white);
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
