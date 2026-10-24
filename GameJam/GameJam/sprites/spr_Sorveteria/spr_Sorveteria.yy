@@ -2,9 +2,9 @@
   "$GMSprite":"v2",
   "%Name":"spr_Sorveteria",
   "bboxMode":0,
-  "bbox_bottom":237,
-  "bbox_left":0,
-  "bbox_right":349,
+  "bbox_bottom":304,
+  "bbox_left":2,
+  "bbox_right":531,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"abc8d95b-dcbc-406a-af10-ce817c5ed001","name":"abc8d95b-dcbc-406a-af10-ce817c5ed001","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"f3d3c9ce-7e59-4156-95c6-29ddb8fdaa54","name":"f3d3c9ce-7e59-4156-95c6-29ddb8fdaa54","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":238,
+  "height":305,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"8771ba42-4746-4d66-83c8-4c480ab67d5a","blendMode":0,"displayName":"default","isLocked":false,"name":"8771ba42-4746-4d66-83c8-4c480ab67d5a","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"396bad9e-3f8a-4bad-b56d-cab8b3d84725","blendMode":0,"displayName":"default","isLocked":false,"name":"396bad9e-3f8a-4bad-b56d-cab8b3d84725","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_Sorveteria",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"abc8d95b-dcbc-406a-af10-ce817c5ed001","path":"sprites/spr_Sorveteria/spr_Sorveteria.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"b587d726-fc84-4814-b3f7-22e8448b5bd4","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"f3d3c9ce-7e59-4156-95c6-29ddb8fdaa54","path":"sprites/spr_Sorveteria/spr_Sorveteria.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"5bd673b8-018b-4bee-a696-3ad980fac594","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":350,
+  "width":532,
 }

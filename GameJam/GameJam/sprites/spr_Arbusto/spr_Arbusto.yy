@@ -2,9 +2,9 @@
   "$GMSprite":"v2",
   "%Name":"spr_Arbusto",
   "bboxMode":0,
-  "bbox_bottom":63,
+  "bbox_bottom":321,
   "bbox_left":0,
-  "bbox_right":100,
+  "bbox_right":434,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"1faf82a4-554e-4577-9787-a11b03c02023","name":"1faf82a4-554e-4577-9787-a11b03c02023","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"0da61f77-b981-4802-ac5a-7395207d9087","name":"0da61f77-b981-4802-ac5a-7395207d9087","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":64,
+  "height":322,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"02a3b924-0c77-4bd3-80ff-d4db710a8f39","blendMode":0,"displayName":"default","isLocked":false,"name":"02a3b924-0c77-4bd3-80ff-d4db710a8f39","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"d2f81753-7262-453a-8ebd-bc802b88fe2d","blendMode":0,"displayName":"default","isLocked":false,"name":"d2f81753-7262-453a-8ebd-bc802b88fe2d","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_Arbusto",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"1faf82a4-554e-4577-9787-a11b03c02023","path":"sprites/spr_Arbusto/spr_Arbusto.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"98d9eba9-eb60-4c14-a880-91882e51544d","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"0da61f77-b981-4802-ac5a-7395207d9087","path":"sprites/spr_Arbusto/spr_Arbusto.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"7fdfe42e-5afb-484e-b580-931079f4bdd6","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":101,
+  "width":435,
 }

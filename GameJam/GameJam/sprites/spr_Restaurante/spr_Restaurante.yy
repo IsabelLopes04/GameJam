@@ -2,24 +2,24 @@
   "$GMSprite":"v2",
   "%Name":"spr_Restaurante",
   "bboxMode":0,
-  "bbox_bottom":175,
+  "bbox_bottom":286,
   "bbox_left":0,
-  "bbox_right":349,
-  "bbox_top":0,
+  "bbox_right":565,
+  "bbox_top":1,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"5b22e956-1746-42b3-8489-ddc41b524756","name":"5b22e956-1746-42b3-8489-ddc41b524756","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"69ac16c0-2142-42b2-8ef5-020ab591ccca","name":"69ac16c0-2142-42b2-8ef5-020ab591ccca","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":176,
+  "height":287,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"8aced8d5-01a7-4db4-bb05-3bcea40378b0","blendMode":0,"displayName":"default","isLocked":false,"name":"8aced8d5-01a7-4db4-bb05-3bcea40378b0","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"469940d4-cb1f-4f94-813f-9cf9c9bb53d8","blendMode":0,"displayName":"default","isLocked":false,"name":"469940d4-cb1f-4f94-813f-9cf9c9bb53d8","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_Restaurante",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"5b22e956-1746-42b3-8489-ddc41b524756","path":"sprites/spr_Restaurante/spr_Restaurante.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"2609db1a-9335-45bd-bece-dee114121e3d","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"69ac16c0-2142-42b2-8ef5-020ab591ccca","path":"sprites/spr_Restaurante/spr_Restaurante.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"1821bfe5-8d3e-4991-b0c1-294042087127","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":350,
+  "width":568,
 }
