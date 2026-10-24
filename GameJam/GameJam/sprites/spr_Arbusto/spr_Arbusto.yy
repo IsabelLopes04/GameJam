@@ -2,9 +2,9 @@
   "$GMSprite":"v2",
   "%Name":"spr_Arbusto",
   "bboxMode":0,
-  "bbox_bottom":321,
+  "bbox_bottom":59,
   "bbox_left":0,
-  "bbox_right":434,
+  "bbox_right":80,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -16,7 +16,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":322,
+  "height":60,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"d2f81753-7262-453a-8ebd-bc802b88fe2d","blendMode":0,"displayName":"default","isLocked":false,"name":"d2f81753-7262-453a-8ebd-bc802b88fe2d","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":435,
+  "width":81,
 }

@@ -2,9 +2,9 @@
   "$GMSprite":"v2",
   "%Name":"spr_Arvore2",
   "bboxMode":0,
-  "bbox_bottom":585,
+  "bbox_bottom":199,
   "bbox_left":0,
-  "bbox_right":606,
+  "bbox_right":206,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -16,7 +16,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":586,
+  "height":200,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"1d00d9eb-95b4-493d-8eb4-d4761e9bc4b0","blendMode":0,"displayName":"default","isLocked":false,"name":"1d00d9eb-95b4-493d-8eb4-d4761e9bc4b0","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":607,
+  "width":207,
 }

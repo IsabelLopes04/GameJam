@@ -2,9 +2,9 @@
   "$GMSprite":"v2",
   "%Name":"spr_Banco",
   "bboxMode":0,
-  "bbox_bottom":266,
+  "bbox_bottom":56,
   "bbox_left":0,
-  "bbox_right":471,
+  "bbox_right":99,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -16,7 +16,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":267,
+  "height":57,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"193a80d7-a51a-4bb2-9f90-c9ec2d97ad35","blendMode":0,"displayName":"default","isLocked":false,"name":"193a80d7-a51a-4bb2-9f90-c9ec2d97ad35","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":472,
+  "width":100,
 }
